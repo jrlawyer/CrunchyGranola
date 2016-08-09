@@ -10,6 +10,6 @@ namespace CrunchyGranola.Models
         public string FirstName { get; set; }
         public DateTime DateOfLastPurchase { get; set; }
 
-        public virtual ICollection<Purchase>Purchase { get; set; }
+        public virtual ICollection<Product>Product { get; set; }
     }
 }

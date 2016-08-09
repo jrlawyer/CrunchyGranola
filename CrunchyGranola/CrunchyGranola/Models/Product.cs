@@ -1,6 +1,6 @@
 ﻿namespace CrunchyGranola.Models
 {
-    public class Purchase 
+    public class Product 
     {
         public int ID { get; set; }
         public int CustomerID { get; set; }

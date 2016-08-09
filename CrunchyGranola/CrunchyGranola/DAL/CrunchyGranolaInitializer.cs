@@ -32,16 +32,16 @@ namespace CrunchyGranola.DAL
             departments.ForEach(d => context.Departments.Add(d));
             context.SaveChanges();
 
-            var purchases = new List<Purchase>
+            var product = new List<Product>
             {
-                new Purchase { CustomerID = 1, DepartmentID = 123, Description = "Apples", Price = 1.5m, UpcCode = 1234567, LeadTimes = "1 week", Quantity = 50},
-                new Purchase { CustomerID = 1, DepartmentID = 124, Description = "Salmon", Price = 7.0m, UpcCode = 1234568, LeadTimes = "2 weeks", Quantity = 10},
-                new Purchase { CustomerID = 2, DepartmentID = 124, Description = "Swordfish", Price = 9.0m, UpcCode = 1234569, LeadTimes = "2 weeks", Quantity = 5},
-                new Purchase { CustomerID = 3, DepartmentID = 125, Description = "Vitamin D", Price = 50m, UpcCode = 1234570, LeadTimes = "3 weeks", Quantity = 20},
-                new Purchase { CustomerID = 4, DepartmentID = 126, Description = "Funky Hat", Price = 10.0m, UpcCode = 1234571, LeadTimes = "2 months", Quantity = 3},
+                new Product { CustomerID = 1, DepartmentID = 123, Description = "Apples", Price = 1.5m, UpcCode = 1234567, LeadTimes = "1 week", Quantity = 50},
+                new Product { CustomerID = 1, DepartmentID = 124, Description = "Salmon", Price = 7.0m, UpcCode = 1234568, LeadTimes = "2 weeks", Quantity = 10},
+                new Product { CustomerID = 2, DepartmentID = 124, Description = "Swordfish", Price = 9.0m, UpcCode = 1234569, LeadTimes = "2 weeks", Quantity = 5},
+                new Product { CustomerID = 3, DepartmentID = 125, Description = "Vitamin D", Price = 50m, UpcCode = 1234570, LeadTimes = "3 weeks", Quantity = 20},
+                new Product { CustomerID = 4, DepartmentID = 126, Description = "Funky Hat", Price = 10.0m, UpcCode = 1234571, LeadTimes = "2 months", Quantity = 3},
             };
 
-            purchases.ForEach(p => context.Purchases.Add(p));
+            product.ForEach(p => context.Products.Add(p));
             context.SaveChanges();
 
         }
