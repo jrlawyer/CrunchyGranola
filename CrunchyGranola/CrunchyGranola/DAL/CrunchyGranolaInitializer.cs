@@ -23,10 +23,10 @@ namespace CrunchyGranola.DAL
             var departments = new List<Department>
 
             {
-                new Department {DeptID = 123, DeptName = "Produce", Budget = 5000 },
-                new Department {DeptID = 124, DeptName = "Seafood", Budget = 3000 },
-                new Department {DeptID = 125, DeptName = "Health", Budget = 4500 },
-                new Department {DeptID = 126, DeptName = "Apparel", Budget = 2000 }
+                new Department {DepartmentID = 123, DepartmentName = "Produce", Budget = 5000 },
+                new Department {DepartmentID = 124, DepartmentName = "Seafood", Budget = 3000 },
+                new Department {DepartmentID = 125, DepartmentName = "Health", Budget = 4500 },
+                new Department {DepartmentID = 126, DepartmentName = "Apparel", Budget = 2000 }
             };
 
             departments.ForEach(d => context.Departments.Add(d));
