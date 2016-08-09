@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace CrunchyGranola.Models
 {
@@ -12,6 +10,6 @@ namespace CrunchyGranola.Models
         public string FirstName { get; set; }
         public DateTime DateOfLastPurchase { get; set; }
 
-        public virtual ICollection<Product>Products { get; set; }
+        public virtual ICollection<Purchase>Purchase { get; set; }
     }
 }

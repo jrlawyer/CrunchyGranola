@@ -1,11 +1,14 @@
 ﻿namespace CrunchyGranola.Models
 {
-    public class Product
+    public class Purchase 
     {
+        public int ID { get; set; }
+        public int CustomerID { get; set; }
+        public int DepartmentID { get; set; }
         public int UpcCode { get; set; }
-        public int Price { get; set; }
+        public decimal Price { get; set; }
         public string Description { get; set; }
-        public string Quantity { get; set; }
+        public int Quantity { get; set; }
         public string LeadTimes { get; set; }
 
         public virtual Department Department { get; set; }
